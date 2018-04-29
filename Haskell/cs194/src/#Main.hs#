@@ -1,0 +1,7 @@
+Modulec Main where
+import HW01Tests
+import HW02
+import HW03
+main :: IO ()
+main = do
+  putStrLn "hello world"

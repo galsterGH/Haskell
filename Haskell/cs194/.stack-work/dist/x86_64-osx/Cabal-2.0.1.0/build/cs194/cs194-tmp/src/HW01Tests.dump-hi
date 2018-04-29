@@ -1,0 +1,356 @@
+
+==================== FINAL INTERFACE ====================
+2018-04-08 05:54:07.496944 UTC
+
+interface main:HW01Tests 8022
+  interface hash: 0539dc940d2a79895275c13ed42ff3ee
+  ABI hash: 4a12307477c956cd3fd7f63ca46e30df
+  export-list hash: e06a900fb8aa7cadeb947dd52c7c9e70
+  orphan hash: de0a3e13799f742895e8e073d5d4882f
+  flag hash: 449a32ae620667893ffd70cc391e907f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HW01Tests.allTests
+  HW01Tests.ex1Tests
+  HW01Tests.ex2Tests
+  HW01Tests.ex3Tests
+  HW01Tests.ex4Tests
+  HW01Tests.ex5Tests
+  HW01Tests.ex6Tests
+  HW01Tests.testDropLastDigit
+  HW01Tests.testLastDigit
+module dependencies: HW01 Testing
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  integer-gmp-1.0.1.0:GHC.Integer.Type 5fa81108482c33b62ec3ac7464eece96
+import  -/  HW01 c1fbc9bc949c3275ec4e7fa21916687e
+  exports: b1c58409b63425a00ef18b0a774f17d2
+  dropLastDigit 276f7cebe7700f14af3fd246b408ede2
+  lastDigit a585faf579894564a23a3188c6200787
+import  -/  Testing 5b79301c6646b9738a5538cc1b5ecdad
+  exports: 6d3bbb09d4ec6265b177f1832b4c4dbb
+  Test c80bc7a141af2ee0a9eb71e603717b7e
+  Test 31678c69a349f57434d82ed2e0c27ab1
+025b42bcdbd1121b5ef13f3f8db283ef
+  $s$fShow(,) ::
+    GHC.Show.Show (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                  (GHC.Show.$fShow(,)_$cshowsPrec
+                     @ GHC.Integer.Type.Integer
+                     @ GHC.Integer.Type.Integer
+                     GHC.Show.$fShowInteger
+                     GHC.Show.$fShowInteger)
+                  (\ (x :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)) ->
+                   GHC.Show.$fShow(,)_$cshowsPrec
+                     @ GHC.Integer.Type.Integer
+                     @ GHC.Integer.Type.Integer
+                     GHC.Show.$fShowInteger
+                     GHC.Show.$fShowInteger
+                     GHC.Show.$fShow(,)1
+                     x
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)])
+                     (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                     (GHC.Show.$fShow(,)_$cshowsPrec
+                        @ GHC.Integer.Type.Integer
+                        @ GHC.Integer.Type.Integer
+                        GHC.Show.$fShowInteger
+                        GHC.Show.$fShowInteger
+                        GHC.Show.$fShow(,)1)
+                     ls
+                     s) -}
+c29bf1346b6fe815ea0d1bc9e9966573
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HW01Tests.$trModule3
+                   HW01Tests.$trModule1) -}
+3aac47ba484848fe4b8f9cde1f3b5f0d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HW01Tests.$trModule2) -}
+0f79141f286a8536e758d9b7ccfba991
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HW01Tests"#) -}
+8740235354355ab61b70baaf8361465f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HW01Tests.$trModule4) -}
+f663b5d24f719af1922ee75777d8c8ac
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+19f3e86f81330616de9f2da683635051
+  $wtestDropLastDigit ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Integer.Type.Integer)
+                   (ww1 :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.eqInteger#
+                        (GHC.Integer.Type.divInteger ww HW01.dropLastDigit1)
+                        ww1 of wild { DEFAULT ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool wild }) -}
+fd9844a53861d694f8ff3e71b81dfe9f
+  $wtestLastDigit ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Integer.Type.Integer)
+                   (ww1 :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.eqInteger#
+                        (GHC.Integer.Type.modInteger ww HW01.dropLastDigit1)
+                        ww1 of wild { DEFAULT ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool wild }) -}
+be79f3a6a6e6823453df18e7ae953a09
+  allTests :: [Testing.Test]
+  {- Strictness: m2,
+     Unfolding: InlineRule (0, True, True) HW01Tests.ex1Tests -}
+8df6727a8c2a3f8dd4a4111ebd3f6ef8
+  ex1Tests :: [Testing.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Testing.Test
+                   HW01Tests.ex1Tests22
+                   HW01Tests.ex1Tests1) -}
+536129bfd409f3db0fd79cd9d2c21b45
+  ex1Tests1 :: [Testing.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Testing.Test
+                   HW01Tests.ex1Tests2
+                   (GHC.Types.[] @ Testing.Test)) -}
+fe4321f53875748c28f70eecfb307ffe
+  ex1Tests10 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests12, HW01Tests.ex1Tests11)) -}
+d32129b32d93e4685f977f25adefbd72
+  ex1Tests11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+84c87cc372fc4a629dff5ee61cd2eb2a
+  ex1Tests12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+b796b1d5dc632d20fa63f55c42dfae70
+  ex1Tests13 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests14, HW01Tests.ex1Tests9)) -}
+2ec873c7e3a31334b2ff1fbcc874162f
+  ex1Tests14 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+7e981a7b0d7137c7f4def76358a9585a
+  ex1Tests15 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests17, HW01Tests.ex1Tests16)) -}
+b834f23e8b3767ea27b2c1a699488024
+  ex1Tests16 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (123) -}
+d5bb5369b3f6c93afb22c895ad03c3a4
+  ex1Tests17 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1234) -}
+d57fa699703caa430074a1a7fe53c23d
+  ex1Tests18 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests16, HW01Tests.ex1Tests19)) -}
+6bb42dd9a24b2f877ea1ccc32fe41922
+  ex1Tests19 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (12) -}
+3f74101bb39c30f63cc46515ce4146b5
+  ex1Tests2 :: Testing.Test
+  {- Unfolding: (Testing.Test
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.$s$fShow(,)
+                   HW01Tests.ex1Tests20
+                   HW01Tests.testDropLastDigit
+                   HW01Tests.ex1Tests3) -}
+abd72ac110dab12783b02de032e85c98
+  ex1Tests20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# HW01Tests.ex1Tests21) -}
+56326278b8b29d3c95a943774450b107
+  ex1Tests21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("dropLastDigit test"#) -}
+822f0e4575e60245c36f9d839be0465f
+  ex1Tests22 :: Testing.Test
+  {- Unfolding: (Testing.Test
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.$s$fShow(,)
+                   HW01Tests.ex1Tests33
+                   HW01Tests.testLastDigit
+                   HW01Tests.ex1Tests23) -}
+c4eff22506f0c55f92fdae50a18cf3b7
+  ex1Tests23 ::
+    [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests31
+                   HW01Tests.ex1Tests24) -}
+09a1a06641e400aa08172d4d7efaa02c
+  ex1Tests24 ::
+    [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests29
+                   HW01Tests.ex1Tests25) -}
+1c1d4cad14e208df5dc830f5ae212108
+  ex1Tests25 ::
+    [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests28
+                   HW01Tests.ex1Tests26) -}
+2aa31e539dbc709621254d1730177a51
+  ex1Tests26 ::
+    [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests27
+                   HW01Tests.ex1Tests7) -}
+181197d823cc8da64b62b6e799f9f921
+  ex1Tests27 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests12, HW01Tests.ex1Tests9)) -}
+91b4cfe31c6d3a485c6eeec605922503
+  ex1Tests28 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests14, HW01Tests.ex1Tests14)) -}
+2695a38e2df8098acad162699ed21691
+  ex1Tests29 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests17, HW01Tests.ex1Tests30)) -}
+8a33703fc0e0c56cbf5c7c00e23ccc8f
+  ex1Tests3 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests18
+                   HW01Tests.ex1Tests4) -}
+f848537d639673594da5239016f5cb02
+  ex1Tests30 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+bc1f53228680167077a6808d41365c81
+  ex1Tests31 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests16, HW01Tests.ex1Tests32)) -}
+571559ebe33be99d35781e23724136e1
+  ex1Tests32 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+e64a0bd82a4734de9559ffbd7b2d40d4
+  ex1Tests33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# HW01Tests.ex1Tests34) -}
+acb5eb9cfd3285299bae88bd48b290aa
+  ex1Tests34 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("lastDigit test"#) -}
+8614f918afe7e4f961f06a96dbc89839
+  ex1Tests4 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests15
+                   HW01Tests.ex1Tests5) -}
+d95582674efe4b7acb67b9e6f68ee5d6
+  ex1Tests5 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests13
+                   HW01Tests.ex1Tests6) -}
+71ff45f2f0f6255a71f0dbc3de50ed7e
+  ex1Tests6 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests10
+                   HW01Tests.ex1Tests7) -}
+e54c7bbd58167d5e6b804dcb5db57ea0
+  ex1Tests7 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   HW01Tests.ex1Tests8
+                   (GHC.Types.[]
+                      @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))) -}
+ba631cf53802cebc75421345679275ef
+  ex1Tests8 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((HW01Tests.ex1Tests9, HW01Tests.ex1Tests9)) -}
+0fc48ed0cd125b3e93b4ae9f558482ca
+  ex1Tests9 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+b7384e2009f0d607f682c9365de9de8d
+  ex2Tests :: [Testing.Test]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ Testing.Test) -}
+fb27c84057d4ae0c6f699b576054c55e
+  ex3Tests :: [Testing.Test]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ Testing.Test) -}
+61b81146ae8d6b296499d078b0d3c4cd
+  ex4Tests :: [Testing.Test]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ Testing.Test) -}
+27b5419998a26d590c785cbc1d726744
+  ex5Tests :: [Testing.Test]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ Testing.Test) -}
+4972235286aac380e5f9a0a28f190815
+  ex6Tests :: [Testing.Test]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ Testing.Test) -}
+08df16a05f94c57e939ec5e2843f042f
+  testDropLastDigit ::
+    (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+    -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S(SS),1*U(U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 HW01Tests.$wtestDropLastDigit ww1 ww2 }) -}
+127d1bac2f9e42daddd1c5e24e7d5394
+  testLastDigit ::
+    (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+    -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S(SS),1*U(U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 HW01Tests.$wtestLastDigit ww1 ww2 }) -}
+"SPEC/HW01Tests $fShow(,) @ Integer @ Integer" [orphan] forall (v1 :: GHC.Show.Show
+                                                                        GHC.Integer.Type.Integer)
+                                                               (v :: GHC.Show.Show
+                                                                       GHC.Integer.Type.Integer)
+  GHC.Show.$fShow(,) @ GHC.Integer.Type.Integer
+                     @ GHC.Integer.Type.Integer
+                     v
+                     v1
+  = HW01Tests.$s$fShow(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,4 +1,5 @@
--- Enter your code here. Read input from STDIN. Print output to STDOUT
+module TailOfTwoStacks (tailOfTwoStacks) where
+
 import Data.Maybe
 import Data.List
 import Data.Monoid
@@ -30,7 +31,7 @@ emptyQueue = (PushQ mempty , PopQ mempty)
 pushq :: a -> Queue a -> Queue a
 pushq a ((PushQ stk), popq) = (PushQ . push a $ stk,popq)
 
-popq :: Queue a -> Queue a 
+popq :: Queue a -> Queue a
 popq q@(PushQ [], PopQ []) = q
 popq (pq,PopQ (x:xs)) =  (pq,PopQ xs)
 popq (PushQ xs, PopQ []) = popq (PushQ [], PopQ . reverse $ xs)
@@ -39,7 +40,7 @@ topq :: Queue a -> (Queue a,a)
 topq q@(pq, PopQ (x:xs)) = (q,x)
 topq (PushQ xs, PopQ []) =  let rev = reverse xs
                             in ((PushQ [], PopQ  rev), head rev)
-         
+
 parseStr :: [String]-> Queue String -> (Queue String,IO())
 parseStr []  q = (q,return ())
 parseStr ("1":xs) q = (pushq (head xs) q,return ())
@@ -51,9 +52,8 @@ handleQueries :: Queue String -> [String] ->IO()
 handleQueries _ [] = return ()
 handleQueries q (x:xs) = let (q',io) = parseStr (words x) q
                          in io >> handleQueries q' xs
-main :: IO()
-main = do
- numberOfQ <- getLine 
+tailOfTwoStacks :: IO()
+tailOfTwoStacks = do
+ numberOfQ <- getLine
  let numOfQInt = (read numberOfQ)::Int
  (sequence. replicate numOfQInt $ getLine) >>= handleQueries emptyQueue
-  
